@@ -1,0 +1,163 @@
+﻿@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 10px !important; /* Thu nhỏ padding để tiết kiệm không gian */
+        width:100%;
+        height:100px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 120px !important;
+    }
+    /* Di chuyển các nút tim, share, và comment vào góc dưới bên phải */
+    .body-tiktek {
+        overflow-y: scroll !important;
+    }
+
+    /* Điều chỉnh cấu trúc sidebar-left */
+    .sidebar-left {
+        display: none !important;
+    }
+
+    /* Điều chỉnh cấu trúc main-page */
+    .main-page {
+        width: 100% ;
+        padding-top: 20px ;
+        padding-bottom: 30px ;
+    }
+
+    .scroll {
+        top: 120px;
+        position: absolute;
+        left: 20px;
+        z-index: 50;
+        width: 100%;
+        justify-content: center!important;
+    }
+
+    .sidebar-right {
+        width: 80%;
+        top: 100px;
+        left: 50px;
+    }
+
+    .main-page {
+        justify-content: center ;
+        padding-top: 1px;
+    }
+
+    .chanel-title {
+        justify-content: space-between ;
+    }
+
+    .description {
+        display: flex ;
+        justify-content: space-between ;
+        padding: 10px ;
+    }
+
+    .chanel-img img {
+        width: 70px ;
+        height: 70px ;
+        border-radius: 50% ;
+        padding-right: 30px ;
+    }
+
+    .main-title {
+        display: flex ;
+    }
+
+    .song-name {
+        display: flex ;
+    }
+
+        .song-name img {
+            width: 30px ;
+            height: 30px ;
+            border-radius: 50% ;
+            padding-right: 10px ;
+        }
+
+    .song-name-title {
+        margin-bottom: 10px ;
+    }
+
+    .followbutton {
+        padding-right: 10px ;
+    }
+
+        .followbutton button {
+            margin-right: 65px ;
+            padding: 10px 20px ;
+        }
+
+    .scroll .video {
+        margin: 0;
+        width: 100%;
+         
+        position: relative;
+    }
+
+    /* Tùy chỉnh video tag để đảm bảo video lấp đầy màn hình */
+    video {
+        width: 100%;
+        height: 540px;
+        object-fit: cover;
+        padding-right: 0;
+    }
+
+    .video {
+        position: relative; /* Để xác định vị trí cho nút */
+    }
+
+    .react-button {
+        padding-top: 430px;
+    }
+
+    .heart img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #000;
+    }
+
+    .heart button {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+
+    .comment img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #000;
+    }
+
+    .comment button {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+
+    .share img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #000;
+    }
+
+    .share button {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+}

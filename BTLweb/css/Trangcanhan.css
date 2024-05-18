@@ -1,0 +1,558 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.body-tiktek {
+    display: flex;
+    width: 10vh;
+}
+
+.header {
+    position: fixed;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    gap: 10px;
+}
+
+.Tiktek {
+    font-size: 25px;
+    color: orange;
+}
+/*tim kiem*/
+.search-bar {
+    border: 1px solid #dbd8d8;
+    background-color: white;
+    border-radius: 25px;
+    /* Adds rounded corners */
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .search-bar input[type="text"] {
+        border: none;
+        outline: none;
+        width: 250px;
+        padding: 5px;
+        border-radius: 25px;
+        /* Adds rounded corners to the input field */
+    }
+
+        .search-bar input[type="text"]::placeholder {
+            font-family: "Google Sans", sans-serif;
+            font-size: 13px;
+            color: #999;
+            /* Placeholder text color */
+        }
+
+.icon-search {
+    margin-right: 5px;
+    /* Add spacing between the input and icon */
+    cursor: pointer;
+    /* Add cursor pointer for interaction */
+}
+
+.vertical-line {
+    width: 1px;
+    /* Adjust the width of the vertical line */
+    height: 15px;
+    /* Adjust the height of the vertical line to match the icon's height */
+    background-color: #dbd8d8;
+    /* Line color */
+    margin-right: 10px;
+    /* Add spacing between the line and the icon */
+}
+/*Nút upload dropdown*/
+.actions {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+
+
+.profile-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.profile-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.profile-button {
+    background-color: #ff4500;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ff4500;
+            color: white;
+        }
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Bên trái*/
+
+.sidebar-left {
+    width: 20%;
+    position: fixed;
+    top: 150px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 500px;
+}
+
+    .sidebar-left .Main {
+        display: flex;
+    }
+
+.Main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: 22px;
+}
+
+.Profile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: 22px;
+}
+.Main a {
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+
+.Main:hover {
+    background-color: grey;
+}
+
+.Profile a {
+    padding-top: 10px;
+    text-decoration: none;
+}
+.Profile:hover {
+    background-color: grey;
+}
+
+
+.Main img {
+    height: 25px;
+    width: 25px;
+    padding-top: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.sidebar-left .Profile {
+    display: flex;
+}
+
+.Profile img {
+    height: 25px;
+    width: 25px;
+    padding-top: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+/*follower*/
+.follow {
+    width: 99%;
+    border-radius: 10px;
+}
+
+.Follow1 a {
+    display: flex;
+    padding-left: 26px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+.Follow1 a:hover {
+    background-color: grey;
+}
+
+.follow-title {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.Follow1 img {
+    height: 60px;
+    width: 60px;
+    padding-top: 15px;
+    border-radius: 50%;
+}
+
+
+
+.Follow-title {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.Follow-subtitle {
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.xemthem {
+    font-size: 11px;
+    margin-left: 10px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding-left: 11px;
+    padding-top: 20px;
+}
+
+.footer1
+.footer2
+.footer3
+.footer4
+.footer4
+.footer5
+.footer6
+.footer7 {
+    display: flex;
+    flex-direction: row;
+    top: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+/*main bên phải*/
+.scroll {
+    top: 140px;
+    position: absolute;
+    right: 200px;
+    z-index: 50;
+}
+
+.sidebar-right {
+    width: 80%;
+    top: 100px;
+    left: 20%;
+}
+
+.main-page {
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.chanel-title {
+    justify-content: space-between;
+}
+
+.account {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-right: 30px;
+}
+
+.maincontent {
+    width: 550px;
+    height: 100%;
+    top: 140px;
+    position: absolute;
+    left: 350px;
+    z-index: 2;
+}
+
+    .maincontent .account {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        justify-content: center;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+.chanel-img {
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    top: 1px;
+    border-radius: 50%;
+}
+
+.userMain {
+    position: absolute;
+    left: 135px;
+    font-weight: bold;
+    top: -20px;
+    font-size: 32px;
+}
+
+.decrip {
+    margin: 0;
+    position: absolute;
+    left: 135px;
+    font-size: 18px;
+    font-weight: 400;
+    top: 40px;
+}
+
+.editUser {
+    width: 150px;
+    height: 36px;
+    position: relative;
+    border: 2px solid rgb(133, 133, 133);
+    align-items: center;
+    border-radius: 5px;
+    top: 75px;
+    left: 135px;
+}
+
+    .editUser a img {
+        position: absolute;
+        left: 15px;
+        top: 5px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .editUser a p {
+        font-size: 15px;
+        width: 100px;
+        position: absolute;
+        left: 50px;
+        top: -5px;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.info {
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: -65px;
+    justify-content: space-around;
+}
+
+    .info .fllowing,
+    .info .fllower,
+    .info .like {
+        text-align: center;
+    }
+
+    .info p {
+        margin: 0;
+        font-size: 16px;
+    }
+/*ListVideo*/
+.decrip span {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.decrip strong {
+    position: absolute;
+    top: 17px;
+    left: 55px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 200px;
+}
+
+.grid-video {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+    .grid-video .girdview_items {
+        border: 1px solid wheat;
+        position: relative;
+    }
+
+.decripstion {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.title {
+    margin: 10px 10px;
+}
+
+.avt {
+    display: flex;
+}
+
+    .avt img {
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px;
+        border-radius: 50%;
+    }
+
+.title {
+    margin: 5px 10px;
+    justify-content: end;
+}
+
+.avt p {
+    font-size: 13px;
+    margin: 20px 5px 0 0;
+}
+
+.avt strong {
+    margin-top: 20px;
+    right: 10px;
+    position: absolute;
+}
+
+.name-web img {
+    top: 40px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.actions img {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar-left {
+        display: none;
+    }
+
+    .sidebar-right {
+        width: 100%;
+    }
+
+    .header {
+        padding: 10px; /* Thu nhỏ padding để tiết kiệm không gian */
+    }
+
+    .search-bar input[type="text"] {
+        width: 120px;
+    }
+
+    /* Điều chỉnh cấu trúc sidebar-left */
+    .sidebar-left {
+        display: none;
+    }
+
+    .info {
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: -90px;
+        justify-content: space-around;
+    }
+
+
+    .maincontent {
+        position: absolute;
+        top: 63%;
+        left: 445px;
+        right: 1px;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        width: 90%;
+    }
+    maincontent .account {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        justify-content: center;
+        padding-top: 30px;
+        
+        left: 40px;
+    }
+
+    .info {
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: -180px;
+        justify-content: space-evenly;
+        gap: -100px;
+    }
+    .video a p{
+        left:40px;
+    }
+    .grid-video video {
+        margin-left: 42px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .grid-video {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+
+    .girdview_items {
+        width: 380px;
+        height: 350px;
+    }
+}
+
+

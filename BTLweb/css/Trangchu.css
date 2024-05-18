@@ -1,0 +1,594 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.body-tiktek {
+    display: flex;
+}
+
+.header {
+    position: fixed;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    gap: 10px;
+}
+
+.Tiktek {
+    font-size: 25px;
+    color: orange;
+}
+/*tim kiem*/
+.search-bar {
+    border: 1px solid #dbd8d8;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .search-bar input[type="text"] {
+        border: none;
+        outline: none;
+        width: 250px;
+        padding: 5px;
+        border-radius: 25px;
+    }
+
+        .search-bar input[type="text"]::placeholder {
+            font-family: "Google Sans", sans-serif;
+            font-size: 13px;
+            color: #999;
+        }
+
+.icon-search {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 15px;
+    background-color: #dbd8d8;
+    margin-right: 10px;
+}
+/*Nút upload dropdown*/
+.actions {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+
+.profile-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.profile-button {
+    background-color: #ff4500;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ff4500;
+            color: white;
+        }
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Bên trái*/
+
+.sidebar-left {
+    width: 20%;
+    position: fixed;
+    top: 118px;
+    background-color: white;
+    padding-bottom: 500px;
+}
+    .sidebar-left .Main {
+        display: flex;
+    }
+
+.Main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: 22px;
+}
+
+.Profile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:25px;
+    font-size:22px;
+}
+
+.Main a {
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+
+.Main:hover {
+    background-color:grey;
+}
+
+.Profile:hover {
+    background-color: grey;
+}
+
+.Profile a {
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+
+.Main img {
+    height: 25px;
+    width: 25px;
+    padding-top: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.sidebar-left .Profile {
+    display: flex;
+}
+
+.Profile img {
+    height: 25px;
+    width: 25px;
+    padding-top: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+/*follower*/
+.follow {
+    width: 99%;
+    border-radius: 10px;
+}
+.followbutton{
+    padding-left:250px;
+}
+.noidung{
+    width:200px;
+}
+.Follow1 a {
+    display: flex;
+    padding-left: 26px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+.Follow1 a:hover{
+    background-color:grey;
+}
+
+.follow-title {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.Follow1 img {
+    height: 60px;
+    width: 60px;
+    padding-top: 15px;
+    border-radius: 50%;
+}
+
+.Follow-title {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.Follow-subtitle {
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.xemthem {
+    font-size: 11px;
+    margin-left: 10px;
+}
+.footer{
+    display:flex;
+    flex-direction:column;
+    font-size:14px;
+    padding-left:11px;
+    padding-top:20px;
+}
+.footer1
+.footer2
+.footer3
+.footer4
+.footer4
+.footer5
+.footer6
+.footer7{
+    display:flex;
+    flex-direction:row;
+    top:5px;   
+}
+a {
+    text-decoration: none;
+}
+ a:hover {
+    text-decoration: underline;
+}
+ 
+
+
+ /*main bên phải*/
+.scroll {
+    top: 140px;
+    position: absolute;
+    left: 350px;
+    z-index: 50;
+
+}
+
+.sidebar-right {
+    width: 80%;
+    top: 100px;
+    left: 50px;
+}
+
+.main-page {
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.chanel-title {
+    justify-content: space-between;
+}
+
+.description {
+    display: flex;
+    padding: 10px;
+    
+}
+
+.chanel-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-right: 30px;
+}
+
+.main-title {
+    display: flex;
+}
+
+.song-name {
+    display: flex;
+    align-items: center;
+}
+
+    .song-name img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding-right: 10px;
+    }
+
+.song-name-title {
+    margin-bottom: 10px;
+}
+
+.followbutton button {
+    margin-right: 100px;
+    padding: 10px 20px;
+}
+.react-button {
+    margin-left: 10px;
+    flex-direction: column;
+    display: flex;
+}
+.buttoncamxuc {
+    border-radius: 50%;
+    /* width: 20px;
+    height: 20px; */
+    border: none;
+    background-color: #f9f9f9;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+}
+
+.camxuc {
+    color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 35px; /*muốn nó nằm bên phải cạnh cái nút thì chỉnh ntn*/
+    top: -50px;
+}
+.dropdown-content1 a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content1 a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .dropdown-content1 a:hover {
+            background-color: #f1f1f1;
+        }
+
+.buttoncamxuc:hover .dropdown-content1 {
+    display: block;
+}
+
+.react-button {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.heart .heart-btn {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.heart-red {
+    color: red;
+}
+
+
+.facebook a img {
+    width: 30px;
+    height: 30px;
+}
+
+.instagram a img {
+    width: 30px;
+    height: 30px;
+}
+
+.twitter a img {
+    width: 30px;
+    height: 30px;
+}
+.react-button {
+    margin-left: 10px;
+}
+.bìnhluan {
+    border:1px solid black;
+    display:flex;
+    flex-direction:column;
+}
+
+ .bìnhluan form {
+        margin-top: 10px;
+    }
+
+
+/* Style cho bảng comment */
+
+.react-button {
+    padding-top: 185px;
+}
+
+.video {
+    display: flex;
+}
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 10px !important; /* Thu nhỏ padding để tiết kiệm không gian */
+        width: 100%;
+        height: 100px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 120px !important;
+    }
+    /* Di chuyển các nút tim, share, và comment vào góc dưới bên phải */
+    .body-tiktek {
+        overflow-y: scroll !important;
+    }
+
+    /* Điều chỉnh cấu trúc sidebar-left */
+    .sidebar-left {
+        display: none !important;
+    }
+
+    /* Điều chỉnh cấu trúc main-page */
+    .main-page {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .scroll {
+        top: 120px;
+        position: absolute;
+        left: 20px;
+        z-index: 50;
+        width: 100%;
+        justify-content: center !important;
+    }
+
+    .sidebar-right {
+        width: 80%;
+        top: 100px;
+        left: 50px;
+    }
+
+    .main-page {
+        justify-content: center;
+        padding-top: 1px;
+    }
+
+    .chanel-title {
+        justify-content: space-between;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .chanel-img img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        padding-right: 30px;
+    }
+
+    .main-title {
+        display: flex;
+    }
+
+    .song-name {
+        display: flex;
+    }
+
+        .song-name img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            padding-right: 10px;
+        }
+
+    .song-name-title {
+        margin-bottom: 10px;
+    }
+
+    .followbutton {
+        padding-right: 10px;
+    }
+
+        .followbutton button {
+            margin-right: 65px;
+            padding: 10px 20px;
+        }
+
+    .scroll .video {
+        margin: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    /* Tùy chỉnh video tag để đảm bảo video lấp đầy màn hình */
+    video {
+        width: 100%;
+        height: 540px;
+        object-fit: cover;
+        padding-right: 0;
+    }
+
+    .video {
+        position: relative; /* Để xác định vị trí cho nút */
+    }
+
+    .react-button {
+        padding-top: 350px;
+    }
+
+    .heart img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #000;
+    }
+
+    .heart button {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+
+    .comment img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #000;
+    }
+
+    .comment button {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+
+    .share img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #000;
+    }
+
+    .share button {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+}
+
